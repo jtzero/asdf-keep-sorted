@@ -15,18 +15,13 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `bash`, `curl`, `tar`, `uname`: generic POSIX utilities.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add keep-sorted
-# or
 asdf plugin add keep-sorted https://github.com/jtzero/asdf-keep-sorted.git
 ```
 
@@ -40,7 +35,7 @@ asdf list-all keep-sorted
 asdf install keep-sorted latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global keep-sorted latest
+asdf set --home keep-sorted latest
 
 # Now keep-sorted commands are available
 keep-sorted --help
